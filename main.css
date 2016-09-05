@@ -1,5 +1,19 @@
+.jumbotron {
+  background-color: lightskyblue;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+
+}
+h1.jumbotron {
+  text-align: center;
+  text-shadow: 2px 2px lightslategray;
+}
+
+/* Print form */
+
 body {
-  background: mintcream; 
+  background: ghostwhite; 
 }
 page {
   background: white;
@@ -8,14 +22,18 @@ page {
   margin-bottom: 0.5cm;
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
-page[size="A4"] {  
+page[size="letter"] {
+  height: 279mm;
+  width: 216mm;
+}
+/*page[size="A4"] {  
   width: 21cm;
   height: 29.7cm; 
 }
 page[size="A4"][layout="portrait"] {
   width: 29.7cm;
   height: 21cm;  
-}
+}*/
 @media print {
   body, page {
     margin: 0;
