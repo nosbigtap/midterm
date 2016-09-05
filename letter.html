@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="digiSheet">
+<html >
     <head>
         <title></title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
@@ -11,16 +11,14 @@
 
     <body>
         <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="index.html">Home</a></li>
-            <li role="presentation"><a href="letter.html">Digisheet</a></li>
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation" class="active"><a href="letter.html">Digisheet</a></li>
             <li role="presentation"><a href="#">Comments</a></li>
         </ul>
-
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Welcome to Digisheet</h1>
-                <p>We got the Sheet you need.</p>
-            </div>
+        <div>
+            <page size="letter"></page>
+            <!--<page size="A4"></page>-->
+            <!--<page size="A4" layout="portrait"></page>-->
         </div>
     </body>
     <footer>

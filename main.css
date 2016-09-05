@@ -1,13 +1,17 @@
 .jumbotron {
   background-color: lightskyblue;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 5px;
+  padding: 100px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 200px 20px
 
 }
-h1.jumbotron {
-  text-align: center;
-  text-shadow: 2px 2px lightslategray;
+.jumbotron h1 {
+  text-shadow: 2px 2px steelblue;
+}
+
+.nav nav-pills {
+  padding: 10px 20px
 }
 
 /* Print form */
@@ -18,7 +22,7 @@ body {
 page {
   background: white;
   display: block;
-  margin: 0 auto;
+  margin: 5em 3em 10em;
   margin-bottom: 0.5cm;
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
