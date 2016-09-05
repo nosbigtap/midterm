@@ -1,10 +1,18 @@
+#mainPage {
+  background: url(rpgDice.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .jumbotron {
   background-color: lightskyblue;
   padding: 100px;
   border-radius: 10px;
   text-align: center;
-  margin: 200px 20px
-
+  margin: 200px 20px;
+  opacity: 0.9;
 }
 .jumbotron h1 {
   text-shadow: 2px 2px steelblue;
