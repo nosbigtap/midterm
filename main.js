@@ -1,2 +1,0 @@
-angular.module("digitSheet",[])
-    .controller("",)

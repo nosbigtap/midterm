@@ -6,43 +6,68 @@
   background-size: cover;
 }
 
+
 .jumbotron {
-  background-color: lightskyblue;
+  background-color: cornflowerblue;
   padding: 100px;
   border-radius: 10px;
   text-align: center;
   margin: 200px 20px;
-  opacity: 0.9;
+  
 }
 .jumbotron h1 {
-  text-shadow: 2px 2px steelblue;
+  text-shadow: 2px 2px royalblue;
+  font-family: 'Fruktur', cursive;
 }
+/* Dragula */
 
-.nav nav-pills {
-  padding: 10px 20px
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
 }
 
 /* Print form */
 
 body {
-  background: ghostwhite; 
+  background: powderblue; 
 }
 page {
   background: white;
   display: block;
-  margin: 5em 3em 10em;
-  margin-bottom: 0.5cm;
+  margin: 5em;
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
 page[size="letter"] {
   height: 279mm;
   width: 216mm;
 }
-/*page[size="A4"] {  
+/*page[size="letter"][layout="landscape"] { 
+  height: 216mm;
+  width: 279mm;
+}
+page[size="A4"] {  
   width: 21cm;
   height: 29.7cm; 
 }
-page[size="A4"][layout="portrait"] {
+page[size="A4"][layout="landscape"] {
   width: 29.7cm;
   height: 21cm;  
 }*/
