@@ -1,3 +1,6 @@
+/* Homepage */
+
+
 #mainPage {
   background: url(rpgDice.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -43,6 +46,21 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
 }
+/* toolkit */
+
+#right {
+  padding: 50px;
+  background-color: ghostwhite;
+  margin-left: 2000px;
+  border: 1px solid steelblue;
+  border-radius: 10px;
+}
+
+/* template forms */
+
+.card {
+  padding: 2.5in 1.5in;
+}
 
 /* Print form */
 
@@ -52,16 +70,16 @@ body {
 page {
   background: white;
   display: block;
-  margin: 5em;
+  margin: 10px;
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
 page[size="letter"] {
-  height: 279mm;
-  width: 216mm;
+  height: 11in;
+  width: 8.5in;
 }
 /*page[size="letter"][layout="landscape"] { 
-  height: 216mm;
-  width: 279mm;
+  height: 8.5in;
+  width: 11in;
 }
 page[size="A4"] {  
   width: 21cm;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
     <head>
         <title>Digisheet</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
@@ -9,17 +9,28 @@
         <script src="main.js"></script>        
     </head>
 
-    <body id="digiSheet">
+    <body ng-app="myApp">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
+        
         <ul class="nav nav-pills">
             <li role="presentation"><a href="index.html">Home</a></li>
             <li role="presentation" class="active"><a href="letter.html">Digisheet</a></li>
             <li role="presentation"><a href="#">Comments</a></li>
         </ul>
         <div>
-            <page size="letter"></page>
+            <page class="container" id="left" size="letter"></page>
             <!--<page size="letter" layout="landscape"></page>-->
             <!--<page size="A4"></page>-->
             <!--<page size="A4" layout="landscape"></page>-->
         </div>
+
+        
+
+        <div class="container" id="right">
+            <div class="card"></div>
+            <div class="banner"><div>
+            <div class="postcard"></div>
+        </div>
+            
     </body>
 </html>
