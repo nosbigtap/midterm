@@ -79,7 +79,7 @@ p.lead {
   display: inline-block;
 
 }
-
+/* contruction elements  */
  
 textarea {
   margin:1px;
@@ -88,6 +88,12 @@ textarea {
   width: 50px;
   word-wrap: normal;
 }
+/*textarea.block: hover{
+  outline: 1px solid blue;
+}
+textarea.dark.block: hover{
+  outline: 1px solid blue;
+}*/
 #yourImage {
   overflow: auto;
   width:200px;
@@ -97,14 +103,26 @@ textarea {
 }
 
  textarea.block {
- 
-  background-color: white;
-  border: 1px dimgray dotted;
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: white;
+  
  }
  textarea.dark.block  {
- 
-  background-color: lightgray;
-  border: 1px dimgray dotted;
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: lightgray;
+  
  }
 
 .container div,

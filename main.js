@@ -22,3 +22,12 @@ var img = new Image();
         document.getElementById("yourImage").src = img.src;
     };
 }
+
+//experiment
+function OnMouseIn(elem) {
+ elem.style.border = "2px solid blue";
+        }
+        function OnMouseOut(elem) {
+ elem.style.border = "";
+        }
+        
