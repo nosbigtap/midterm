@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="dragulaTest">
+
+  <head>
+  
+    <title>Stack Sheet</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://rawgit.com/bevacqua/angular-dragula/master/dist/angular-dragula.min.js"></script>
+    <script src="main.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body id="stackSheet" ng-controller="MainCtrl">
+    <a class="btn btn-primary" href="index.html" role="button">home</a>
+    <input class="btn btn-primary" type="button" value="Add Image" onClick="imagePrompt ()">
+    <br>
+    <br>
+    <div class='wrapper'>
+      <div class='container' dragula='"first-bag"'>
+
+      </div>
+
+      <div class='container' dragula='"first-bag"'>
+        <textarea class="block"></textarea>
+        <textarea class="dark block"></textarea>
+        <div class="image">
+          <img id="yourImage">
+        </div>
+      </div>
+    </div>
+    
+  </body>
+
+</html>
+

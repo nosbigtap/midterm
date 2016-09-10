@@ -1,0 +1,154 @@
+/* dragula */
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+/* Main Page */
+#mainPage {
+  background-image: url(rpgDice.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+
+.jumbotron {
+  text-align: center;
+  border-radius: 10px;
+  margin: 12%;
+  background-color: cornflowerblue;
+}
+.jumbotron h1{
+  color: powderblue;
+  font-family: 'Fruktur', cursive;
+  text-shadow: 2px 2px royalblue;
+}
+p.lead {
+  font-family: 'Rock Salt', cursive;
+  color: darkslategray
+}
+
+/* Stack Sheet */
+#stackSheet {
+  background-color: cornflowerblue;
+  margin: 2%;
+}
+
+
+/* dragula-specific styles */
+.wrapper {
+  display: inline-block;
+  background-color: royalblue;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: table-cell;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: auto;
+}
+.container:nth-child(odd) {
+  padding: .5in; 
+  background-color: white;
+  width: 8.5in;
+  height: 11in;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  max-width: 8.5in;
+  max-height: 11in;
+  vertical-align: top;
+
+}
+.container.firstBag:nth-child(odd) *{
+  display: inline-block;
+
+}
+
+ 
+textarea {
+  margin:1px;
+  overflow: auto;
+  height: 50px;
+  width: 50px;
+  word-wrap: normal;
+}
+#yourImage {
+  overflow: auto;
+  width:200px;
+  resize: both;
+  margin: 1px;
+  display: inline-block;
+}
+
+ textarea.block {
+ 
+  background-color: white;
+  border: 1px dimgray dotted;
+ }
+ textarea.dark.block  {
+ 
+  background-color: lightgray;
+  border: 1px dimgray dotted;
+ }
+
+.container div,
+.gu-mirror {
+  margin: 0;
+  float: left;
+  transition: opacity 0.4s ease-in-out;
+}
+.container div {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+.gu-mirror {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.container.ex-over {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.handle {
+  padding: 0 5px;
+  margin-right: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: move;
+}
+@media print {
+  , {
+    margin: 0;
+    box-shadow: 0;
+  }
+} 
+
+@media print {
+    input, textarea {
+        outline: none !important;
+    } 
+}
+@media print {
+
+    .container:nth-child(odd) {display:block;}
+    .wrapper {display:none;}
+
+ }
